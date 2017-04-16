@@ -35,8 +35,56 @@ be imported.
 
 Once the import is completed, when you return to your project Backlog view:
 ![Epics in Baclog](/README_images/jira-epics.png)
+
 # Components
 One of the most under-used and under-appreciated tools in JIRA, Components
 allow users to organize and tag Stories and tickets. For Drupal projects, 
 a natural extension is to use Content Types, and Regions to catalog work
 and identify connections among tickets, during testing or QA, for example.
+
+## Postman
+If you're not already familiar with Postman (https://www.getpostman.com), 
+I encourage you to do so. It's a great tool for testing and using with API 
+endpoints. There is a Chrome app as well as a standalone app.
+
+## JIRA REST API
+Unfortunately, it's not as easy to import Components into a project in JIRA.
+You can import stories and epics with associations to components, but they
+need to be already existing. We'll get around this by leveraging JIRA's REST 
+API and the Postman app to import our list of Components. This list is the
+JSON file `components_description.json` with Titles and Descriptions. Edit
+this file to your liking.
+
+## Set up a Collection in Postman
+Once you have downloaded and set up Postman, set up your first Collection.
+For this Collection, you'll need the URL of the JIRA instance you'll be 
+importing the Components into. First, in the Authorization tab, use Basic 
+Auth along with your username and password for the JIRA instance, to create 
+a base-64 encoded Header for all requests. You'll need this in the next step.
+
+To shortcut this, you can import the Collection preset, and update this
+appropriately. Use the `Add Components.postman_collection.json` file, but 
+update:
+* JIRA instance URL - `http://YOURJIRAINSTANCE.atlassian.net`
+* JIRA username and password - `[base64-encoded-username:password combo]`
+* JIRA project shortcode - `[PROJECTCODE]`
+
+Once imported, check the Collection header's settings:
+
+![Collection Headers](/README_images/collection-headers.png)
+
+In body, use the following settings to allow us to leverage the data file.
+![Collection Body](/README_images/collection-body.png)
+
+To connect these variables - the title and description - we need to 
+assign the variables:
+![Collection PreRequest](/README_images/collection-prerequest.png)
+
+Once your collection is set up, next go to the Collection Runner, to 
+connect it with the data set of Components.
+![Collection Runner Setup](/README_images/setup-collection-runner.png)
+
+
+## More info
+For more information about using Postman to run multiple datasets: https://www.getpostman.com/docs/multiple_instances
+
