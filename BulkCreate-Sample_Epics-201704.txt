@@ -1,0 +1,34 @@
+{
+  "config.version" : "2.0",
+  "config.project.from.csv" : "false",
+  "config.encoding" : "UTF-8",
+  "config.email.suffix" : "@",
+  "config.field.mappings" : {
+    "Issue Type" : {
+      "jira.field" : "issuetype"
+    },
+    "Description" : {
+      "jira.field" : "description"
+    },
+    "Priority" : {
+      "jira.field" : "priority"
+    },
+    "Summary" : {
+      "jira.field" : "summary"
+    },
+    "Epic Name" : {
+      "existing.custom.field" : "10003"
+    }
+  },
+  "config.value.mappings" : { },
+  "config.delimiter" : ",",
+  "config.project" : {
+    "project.type" : null,
+    "project.key" : null,
+    "project.description" : null,
+    "project.url" : null,
+    "project.name" : null,
+    "project.lead" : null
+  },
+  "config.date.format" : "dd/MMM/yy h:mm a"
+}
