@@ -1,0 +1,48 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Add Components",
+		"_postman_id": "b8475c3d-9f73-1609-c219-9f26c48cf55f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create a project component data",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"postman.setGlobalVariable(\"component\", data.component);",
+							"postman.setGlobalVariable(\"description\", data.description);"
+						]
+					}
+				}
+			],
+			"request": {
+				"url": "http://YOURJIRAINSTANCE.atlassian.net/rest/api/2/component",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic [base64-encoded-username:password combo]",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"{{component}}\",\n    \"description\": \"{{description}}\",\n    \"project\": \"[PROJECTCODE]\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

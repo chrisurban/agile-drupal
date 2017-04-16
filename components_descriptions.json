@@ -1,0 +1,178 @@
+[
+{
+"component": "Admin Settings",
+"description": "Related to settings typical accessible to admins only"
+},
+{
+"component": "Advertising",
+"description": "Related to handling and display of advertising on the site"
+},
+{
+"component": "Commerce",
+"description": "Commerce or shopping cart related"
+},
+{
+"component": "Content Scheduling",
+"description": "Scheduling publishing, unpublished or other workflow transitions"
+},
+{
+"component": "Content: Article",
+"description": "Work related to Article content type"
+},
+{
+"component": "Content: Calendar",
+"description": "Work related to Calendar content type"
+},
+{
+"component": "Content: Event",
+"description": "Work related to Event content type"
+},
+{
+"component": "Content: Home Page",
+"description": "Work related to Home Page of the site"
+},
+{
+"component": "Content: Media",
+"description": "Work related to Media entity type"
+},
+{
+"component": "Content: News Release",
+"description": "Work related to News Release content type"
+},
+{
+"component": "Content: Photo Gallery",
+"description": "Work related to Photo Gallery content type"
+},
+{
+"component": "Content: Social Media Item",
+"description": "Work related to Social Media Item content type"
+},
+{
+"component": "Content: Video",
+"description": "Work related to Video content type"
+},
+{
+"component": "Editing Content",
+"description": "Work related to content editing"
+},
+{
+"component": "Editing Images/Media",
+"description": "Work related to image or media editing"
+},
+{
+"component": "Error Pages",
+"description": "Related to error pages display"
+},
+{
+"component": "Geolocation",
+"description": "Work related to geolocation"
+},
+{
+"component": "Global Footer",
+"description": "Work within the global footer for the site"
+},
+{
+"component": "Global Navigation",
+"description": "Work within the global navigation menu for the site"
+},
+{
+"component": "Integration: Analytics",
+"description": "Work related to Analytics and user traffic analysis"
+},
+{
+"component": "Integration: Authentication",
+"description": "Work related to external authentication (SAML, SSO, etc.)"
+},
+{
+"component": "Integration: CDN",
+"description": "Work related to leveraging content delivery networks"
+},
+{
+"component": "Integration: Chat",
+"description": "Work related to chat service integration"
+},
+{
+"component": "Integration: Salesforce",
+"description": "Work related to connecting with or passing data to Salesforce"
+},
+{
+"component": "Integration: Social",
+"description": "Work related to sharing with social networks"
+},
+{
+"component": "Integration: YouTube",
+"description": "Work related to integrating YouTube videos"
+},
+{
+"component": "Internationalization (i18n)",
+"description": "Work related to preparation for localisation and translations"
+},
+{
+"component": "Metadata",
+"description": "Work related to metadata"
+},
+{
+"component": "Migration of Content",
+"description": "Work around migration of content from other sites"
+},
+{
+"component": "Onboarding/Enablement",
+"description": "Tasks and work related to onboarding and enablement of site builders"
+},
+{
+"component": "Search",
+"description": "Work related to Search (Solr, native Drupal, etc.)"
+},
+{
+"component": "Security",
+"description": "Work related to additional security measures (TFA, IP whitelisting, etc.)"
+},
+{
+"component": "SEO",
+"description": "Work related to search engine optimization"
+},
+{
+"component": "Setup: Server",
+"description": "Tasks related to server hosting preparation"
+},
+{
+"component": "Setup: Site",
+"description": "Tasks related to initial setup of site"
+},
+{
+"component": "Site Performance",
+"description": "Work related to improving site performance"
+},
+{
+"component": "Testing",
+"description": "Tasks related to configuration and setup of testing"
+},
+{
+"component": "UI",
+"description": "User interface-related work"
+},
+{
+"component": "URL Management",
+"description": "Work related to URL Management"
+},
+{
+"component": "User Forms",
+"description": "Work related to user forms"
+},
+{
+"component": "User Groups",
+"description": "Work related to groups of users, or OG-related work"
+},
+{
+"component": "User Profile",
+"description": "Work related to leveraging native User profiles"
+},
+{
+"component": "UX",
+"description": "Work related to user experience on the site"
+},
+{
+"component": "Workflow & Roles",
+"description": "Work related to user roles and content workflow and handling"
+}
+]
