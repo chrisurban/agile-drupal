@@ -66,8 +66,13 @@ To shortcut this, you can import the Collection preset, and update this
 appropriately. Use the `Add Components.postman_collection.json` file, but 
 update:
 * JIRA instance URL - `http://YOURJIRAINSTANCE.atlassian.net`
-* JIRA username and password - `[base64-encoded-username:password combo]`
 * JIRA project shortcode - `[PROJECTCODE]`
+
+Next, add your username and password to access the JIRA project. Postman
+will convert this to a base64 encoded string. In the Authorization tab, 
+use Basic Auth along with your username and password for the JIRA instance, 
+to create a base-64 encoded Header for all requests. The Header will be 
+added automatically.
 
 Once imported, check the Collection header's settings:
 
@@ -86,5 +91,6 @@ connect it with the data set of Components.
 
 
 ## More info
-For more information about using Postman to run multiple datasets: https://www.getpostman.com/docs/multiple_instances
+For more information about using Postman to run multiple datasets: 
+https://www.getpostman.com/docs/multiple_instances
 
