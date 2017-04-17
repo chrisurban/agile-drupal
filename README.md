@@ -94,3 +94,23 @@ connect it with the data set of Components.
 For more information about using Postman to run multiple datasets: 
 https://www.getpostman.com/docs/multiple_instances
 
+# Workflow
+In most projects with only a few people, a simple workflow such as To Do -> Doing -> Done
+is sufficient. However, once a dedicated QA resource, multiple developers and
+a diligent product owner are involved, then it's time for an appropriate
+workflow.
+
+The workflow provided here, `Agile Drupal Workflow.xml` represents a good
+place to start with your projects.
+![Collection Runner Setup](/README_images/Agile-Drupal-workflow.png)
+Developers pick up tickets that are marked as Ready to Select and move them
+to In Progress. Once completed, they're submitted for Code Review, by way
+of a Ready for Review queue state. (This queue state is repeated throughout
+the workflow) Once merged and deployed to a development environment for
+testing, it goes to QA (by way of Ready for QA) and then to a Ready for 
+Staging queue. Once a Staging deployment is done, tickets move to Staging
+Review, and that marks the end of our development workflow.
+
+When creating a project in JIRA, you can import this Workflow and apply it
+to all ticket types, or just Bugs and Stories, for example.
+
