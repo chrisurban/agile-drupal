@@ -22,7 +22,7 @@
 				}
 			],
 			"request": {
-				"url": "http://YOURJIRAINSTANCE.atlassian.net/rest/api/2/component",
+				"url": "https://YOURJIRAINSTANCE.atlassian.net/rest/api/2/component",
 				"method": "POST",
 				"header": [
 					{
